@@ -26,6 +26,6 @@ export function checkout() {
   return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
 }
 
-export function getAllOrders() {
-  return sendRequest(`${BASE_URL}/user`, 'GET')
+export function getOrders() {
+  return sendRequest(`${BASE_URL}/user/orders`, 'GET');
 }

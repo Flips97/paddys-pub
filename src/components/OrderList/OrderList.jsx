@@ -1,10 +1,12 @@
 import OrderListItem from "../OrderListItem/OrderListItem";
 
-export default function OrderList({orders}) {
-  const ordersDB = orders.map(order =>
+export default function OrderList({ orderHistory, setActiveOrder, activeOrder }) {
+  const ordersDB = orderHistory.map(order =>
     <OrderListItem
       key={order._id}
       ordersItem={order}
+      setActiveOrder={setActiveOrder}
+      activeOrder={activeOrder}
     />
   );
   return (

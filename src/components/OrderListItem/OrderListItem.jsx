@@ -1,9 +1,16 @@
-export default function OrderListItem({ordersItem ,key}) {
-    return (        
-        <div>
-        <div className="name">Order ID: {ordersItem.orderId} </div>
-        <div className="name">${ordersItem.orderTotal.toFixed(2)} </div>
-        <div className="name">{ordersItem.totalQty} items</div>
-        </div>        
+export default function OrderListItem({ order, setActiveOrder, activeOrder }) {
+  return (
+    <div onClick={() => setActiveOrder(order)} className={order === activeOrder ? 'OrderListItem selected' : 'OrderListItem'} >
+      <div>
+        <div>Order Id: 
+          <span class="smaller">{order.orderId}</span>
+        </div>
+        <div class="smaller">{order.orderDate}</div>
+      </div>
+      <div class="align-rt">
+        <div>${order.orderTotal.toFixed(2)}</div>
+        <div class="smaller">{order.totalQty} Items</div>
+      </div>
+    </div>
   );
 }
