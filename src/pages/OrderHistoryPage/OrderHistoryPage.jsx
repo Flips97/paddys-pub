@@ -1,13 +1,7 @@
-// import { Link } from 'react-router-dom';
 import { useState, useEffect} from 'react';
 import './OrderHistoryPage.css';
-// import * as usersService from '../../utilities/users-service';
-import UserLogOut from '../../components/UserLogOut/UserLogOut';
-// import OrderList from '../../components/OrderList/OrderList';
-// import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import * as ordersAPI from '../../utilities/orders-api'
-// import formatCurrency from '../../utilities/formatCurrency';
-// import './OrderHistory.css'
+
 
 export default function OrderHistory() {
     const[orders, setOrders] = useState ([])
@@ -43,19 +37,16 @@ export default function OrderHistory() {
                                 <p key={lineIndex}>{lineItem.item.name}</p>
                                 <p className="oh-liPrice">
                                     <span>
-                                        {lineItem.qty}x 
+                                        ({lineItem.qty}x) 
                                     </span>
                                     <span>
                                         ${lineItem.extPrice}
-                                    </span>
-                                    <span className="oh-extPrice">
-                                        {/* {formatCurrency(lineItem.extPrice)} */}
                                     </span>
                                 </p>
                             </div>
                             ))}
                         <div className="oh-total">
-                            {/* {formatCurrency(order.orderTotal)} */}
+                           Total: ${order.orderTotal} 
                         </div>
                     </div>
                 </div>

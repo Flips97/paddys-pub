@@ -1,0 +1,28 @@
+
+nav {
+    background-color: #224D17;
+    padding: 10px;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav .logout-link {
+    cursor: pointer;
+    color: #e74c3c;
+  }
+  
+  nav .user-info {
+    margin-right: 10px;
+  }

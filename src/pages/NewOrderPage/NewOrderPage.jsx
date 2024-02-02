@@ -16,9 +16,6 @@ export default function NewOrderPage({ user, setUser }) {
   const categoriesRef = useRef([]);
   const navigate = useNavigate()
 
-
-  // The empty dependency array causes the effect
-  // to run ONLY after the FIRST render
   useEffect(function() {
     async function getItems() {
       const items = await itemsAPI.getAll();
@@ -36,8 +33,6 @@ export default function NewOrderPage({ user, setUser }) {
   }, []);
 
   async function handleAddToOrder(itemId) {
-    // 1. Call the addItemToCart function in ordersAPI, passing to it the itemId, and assign the resolved promise to a variable named cart.
-    // 2. Update the cart state with the updated cart received from the server
     const updatedCart = await ordersAPI.addItemToCart(itemId)
     setCart(updatedCart)
   }

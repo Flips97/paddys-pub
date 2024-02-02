@@ -1,16 +1,56 @@
-.OrderHistoryPage {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1.6fr 3.5fr 3fr;
-    grid-template-rows: 1fr;
-    background-color: var(--white);
-    border-radius: 2vmin;
-  }
-  
-  .OrderHistoryPage aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3vmin 2vmin;
-  }
+.OrderHistory {
+  width: 80%;
+  margin: auto;
+}
+
+.oh-order {
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.oh-date {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.oh-ddmmyy {
+  margin-right: 10px;
+}
+
+.oh-num {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.oh-lineItems {
+  margin-top: 10px;
+}
+
+.oh-li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.oh-li p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.oh-liPrice {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.oh-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3498db;
+  margin-top: 10px;
+}
