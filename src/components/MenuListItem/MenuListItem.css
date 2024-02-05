@@ -1,41 +1,46 @@
+/* Apply styling to the MenuListItem container */
 .MenuListItem {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3vmin;
-    padding: 2vmin;
-    color: var(--text-light);
-    background-color: var(--white);
-    border: .1vmin solid var(--tan-3);
-    border-radius: 1vmin;
-    font-size: 4vmin;
-  }
-  
-  .MenuListItem .emoji {
-    height: 8vw;
-    width: 8vw;
-    font-size: 4vw;
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
-    border-radius: 1vmin;
-  }
-  
-  .MenuListItem .buy {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .MenuListItem .buy span {
-    font-size: 1.7vw;
-    text-align: center;
-    color: var(--text-light);
-  }
-  
-  .MenuListItem .name {
-    font-size: 2vw;
-    text-align: center;
-    color: var(--text-light);
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Style the name of the menu item */
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: green;
+}
+
+/* Style the buy section containing price and ADD button */
+.buy {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the price */
+.buy span {
+  font-size: 1.1em;
+  margin-right: 10px;
+  color: #555;
+}
+
+/* Style the ADD button */
+.btn-sm {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-sm:hover {
+  background-color: #2980b9;
+}
   

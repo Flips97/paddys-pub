@@ -1,25 +1,25 @@
 .CategoryList {
-    color: var(--text-light);
-    list-style: none;
-    padding: 0;
-    font-size: 1.7vw;
-  }
-  
-  .CategoryList li {
-    padding: .6vmin;
-    text-align: center;
-    border-radius: .5vmin;
-    margin-bottom: .5vmin;
-  }
-      
-  .CategoryList li:hover:not(.active) {
-    cursor: pointer;
-    background-color: var(--orange);
-    color: var(--white);
-  }
-  
-  .CategoryList li.active {
-    color: var(--text-dark);
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the individual category items */
+.CategoryList li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the active category */
+.CategoryList li.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Hover effect for category items */
+.CategoryList li:hover {
+  background-color: #f4f4f4;
+}

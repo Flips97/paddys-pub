@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #032210;
+    color: #ecf0f1;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Style the SignUpForm and LoginForm components */
+/* Customize these styles based on your design */
+.SignUpForm,
+.LoginForm {
+    width: 400px;
+    padding: 20px;
+    background-color: #165520;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Style form inputs, labels, and buttons */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #2c3e50;
+    border-radius: 6px;
+    color: #333;
+}
+
+button {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
